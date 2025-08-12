@@ -65,3 +65,29 @@ cd D:\environmentpro\canal.deployer-1.1.4\bin
 startup.bat
 ```
 
+
+
+# git
+
+1. create remote github repository--HTTPS![image-20250812161101734](C:\Users\vikinea\AppData\Roaming\Typora\typora-user-images\image-20250812161101734.png)
+
+2. Upload the local project to GitHub
+
+```bash
+#first upload
+cd ..
+git init 
+git add .
+git config --global user.name "parajoo"
+git config --global user.email "minz523334@gmail.com"
+git commit -m "first commit"
+git remote add origin https://github.com/parajoo/project0812.git
+git branch -M main   # 把分支名改成 main（如果还没改过）
+git push -u origin main
+#further uploaded
+git add .
+git commit -m "更新说明"
+git push
+
+```
+
